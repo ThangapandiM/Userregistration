@@ -1,0 +1,20 @@
+.bgcolor{
+    background-color: white;
+    
+}
+.submitbtn{
+    min-height: 40px;
+    border-radius: 10px;
+    width: 15%;
+    color:white;
+    background: #4367b0;
+    border-color: #357ebd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto 2px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color .05s ease;
+    padding-left: 60px
+}

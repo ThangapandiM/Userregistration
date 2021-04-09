@@ -1,0 +1,118 @@
+<div  fxLayout fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+
+  
+  <div class="loginpagecontainer" fxLayout="row" fxFlex="100%" fxLayout.xs="column" fxLayoutAlign="start center" fxFlex.xs="20%"  fxHide.xs fxShow>
+    <div fxLayout="column" fxFlex="20%" class="container "></div>
+<div fxLayout="column" class="container loginbg">
+  
+  <mat-tab-group>
+    <mat-tab label="Client"> 
+      <form name="loginform" [formGroup]="loginform">
+        <div class="login-wrapper" >
+            <div class="grid-container">
+              <div class="login-ctnr">
+                
+               
+                <div class="logo">
+                 
+                  <i class="fa fa-cloud logo-img" width="80px" aria-hidden="true" style="font-size:70px; color:var(--color-primary)"></i>
+        
+                  <h3 class="heading">Sign in .</h3>
+                </div>
+                
+              
+                <div class="login-content box box-banner">
+                  <div class="grid-row">
+                    <div >
+                      <mat-form-field appearance="outline" fxFlex="90%">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="clientEmail" required>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="grid-row">
+                    <div >
+                      <div class="password">
+                        <mat-form-field appearance="fill" fxFlex="90%">
+                          <mat-label>Enter your password</mat-label>
+                          <input matInput [type]="hide ? 'password' : 'text'" formControlName="Clientpwd">
+                          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                          </button>
+                          <mat-hint style="color: red;">{{Invaliduser}}</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-row">
+                    <div fxLayoutAlign="center center">
+                      <button class="submitbtn" type="submit" (click)="LoginClient()">Login</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          </form>
+
+        </mat-tab>
+        <mat-tab label="Provider">   <div class="login-wrapper" >
+          <div class="grid-container">
+            <div class="login-ctnr">
+              
+             
+              <div class="logo">
+               
+                <i class="fa fa-cloud logo-img" width="80px" aria-hidden="true" style="font-size:70px; color:var(--color-primary)"></i>
+      
+                <h3 class="heading">Sign in .</h3>
+              </div>
+              
+            
+              <div class="login-content box box-banner">
+                <div class="grid-row">
+                  <div >
+                    <mat-form-field appearance="outline" fxFlex="90%">
+                      <mat-label>User Name</mat-label>
+                      <input matInput >
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="grid-row">
+                  <div >
+                    <div class="password">
+                      <mat-form-field appearance="fill" fxFlex="90%">
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                        <mat-hint style="color: red;">{{Invaliduser}}</mat-hint>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-row">
+                  <div fxLayoutAlign="center center">
+                    <button class="submitbtn" type="submit" (click)="Loginprovider()" >Login</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div></mat-tab>
+  </mat-tab-group>
+  
+        </div>
+        <div fxLayout="column" class="container loginbg createaccount" fxLayoutAlign="center center" >
+          <button class="Registration" mat-button (click)="AccountReg()" >Create Account</button>
+        </div>
+        
+      </div> 
+      
+      </div>
+
+  
+  

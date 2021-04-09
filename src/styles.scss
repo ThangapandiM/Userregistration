@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.container {
+    padding: 20px;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  body, html {
+   min-height: 100vh;
+    background-color: #edebeb;
+  }
+  .mat-checkbox-layout {
+    display: inline !important;
+  }
+  .mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+    /* display: flex; */
+}
+  .label-header {
+    height: 13px;
+  }
+  
+  .box {
+    position: relative;
+  }
+  
+  .box-tip-shown .box-tips {
+    right: -20%;
+    margin-right:-20px;
+    padding-right: 0;
+  }
+  

@@ -1,0 +1,159 @@
+<div fxflex="100%" class="bgcolor"  fxLayout="column" fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0" >
+    <div fxflex="100%" class="bgcolor"  fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+
+        <mat-list>
+            <mat-list-item>
+              <mat-icon matListIcon color="primary">account_circle</mat-icon>
+              <span class="filed-header">Provider Details </span>
+            </mat-list-item>
+          </mat-list>
+
+    </div>
+    <form name="providerform" [formGroup]="providerform">
+    <div fxflex="100%" class="bgcolor" fxLayoutAlign="start center"  fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+   
+      
+    <div  fxLayout="column" fxFlex="25%" fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+        <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="First Name" formControlName="FirstName"   maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Last Name"  formControlName="LastName"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="NPI Number"  formControlName="NPINumber" maxlength="25"  >
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <mat-label>Credential</mat-label>
+              <mat-select formControlName="Credential"  multiple>
+                <mat-option value="ACN">ACN</mat-option>
+                <mat-option value="ACN">BCN</mat-option>
+                <mat-option value="ACN">ACN</mat-option>
+                <mat-option value="ACN">ACN</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+
+
+    </div>
+    <div  fxLayout="column" fxFlex="25%" fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+        <div fxLayout="row" fxLayout.xs="column"></div>
+        <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Pratice Name" formControlName="PracticeName" maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Address" formControlName="Address" maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="City" formControlName="City" maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="State" formControlName="State"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+
+
+    </div>
+    <div  fxLayout="column" fxFlex="25%"  fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+        <div fxLayout="row" fxLayout.xs="column"></div>
+        <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Zip code" formControlName="Zipcode"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Country" formControlName="Country" maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Phone Number" formControlName="PhoneNumber"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Fax Number" formControlName="FaxNumber"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          
+
+    </div>
+    <div  fxLayout="column" fxFlex="25%"  fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+        <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="WebSite" formControlName="WebSite"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput placeholder="Email@example.com" formControlName="Email"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" formControlName="Password"  maxlength="25"  required>
+              
+            </mat-form-field>
+          </div>
+          <div fxLayout="row">
+            <div fxFlex="10%"></div>
+            <mat-form-field fxFlex="80%">
+              <input matInput [type]="hide ? 'password' : 'text'" placeholder="Confirm Password" formControlName="ConfirmPassword" maxlength="25"  required>
+              <mat-hint style="color: red;">{{confirmpassworderror}}</mat-hint>
+            </mat-form-field>
+          </div>
+
+    </div>
+   
+
+</div>
+</form>
+<div fxflex="100%" class="bgcolor"  fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0" fxLayoutAlign="center center">
+    <button class="submitbtn" type="submit" (click)="Submit()" >Save</button>
+</div>
+
+</div>

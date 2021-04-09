@@ -1,0 +1,41 @@
+.loginbg{
+    background-color: white;
+    width: 450px;
+    min-height: 66.7vh;
+    
+}
+.Bgcolor
+{
+  min-height: 100%;
+    background-color: #f7f6f6;
+}
+.loginpagecontainer{
+    min-height: 100vh;
+
+}
+.submitbtn{
+    min-height: 40px;
+    border-radius: 10px;
+    width: 40%;
+    color:white;
+    background: #4367b0;
+    border-color: #357ebd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto 2px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color .05s ease;
+    padding-left: 60px
+}
+.createaccount{
+    background-color: #7699e1;
+}
+.Registration{
+    color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    width: 50%;
+}
+

@@ -1,0 +1,63 @@
+{
+    "result_count":1,
+    "results":[
+       {
+          "enumeration_type":"NPI-1",
+          "number":1467065946,
+          "last_updated_epoch":1598372610,
+          "created_epoch":1598313600,
+          "basic":{
+             "first_name":"ANALYN",
+             "last_name":"ABAD",
+             "sole_proprietor":"NO",
+             "gender":"F",
+             "enumeration_date":"2020-08-25",
+             "last_updated":"2020-08-25",
+             "status":"A",
+             "name":"ABAD ANALYN",
+             "certification_date":"2020-08-25"
+          },
+          "other_names":[
+             
+          ],
+          "addresses":[
+             {
+                "country_code":"US",
+                "country_name":"United States",
+                "address_purpose":"LOCATION",
+                "address_type":"DOM",
+                "address_1":"610 ELM ST STE 212",
+                "address_2":"",
+                "city":"SAN CARLOS",
+                "state":"CA",
+                "postal_code":"940703070",
+                "telephone_number":"650-591-9623"
+             },
+             {
+                "country_code":"US",
+                "country_name":"United States",
+                "address_purpose":"MAILING",
+                "address_type":"DOM",
+                "address_1":"610 ELM ST STE 212",
+                "address_2":"",
+                "city":"SAN CARLOS",
+                "state":"CA",
+                "postal_code":"940703070",
+                "telephone_number":"650-591-9623"
+             }
+          ],
+          "taxonomies":[
+             {
+                "code":"101YM0800X",
+                "desc":"Counselor Mental Health",
+                "primary":true,
+                "state":"",
+                "license":""
+             }
+          ],
+          "identifiers":[
+             
+          ]
+       }
+    ]
+ }

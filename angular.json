@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/demoproj",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,10 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": [
+              {
+                "input": "node_modules/@webcomponents/custom-elements/src/native-shim.js"
+              }
+            ]
           },
           "configurations": {
             "production": {
@@ -54,6 +58,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -84,7 +92,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -136,5 +144,8 @@
       }
     }
   },
-  "defaultProject": "demoproj"
+  "defaultProject": "demoproj",
+  "cli": {
+    "analytics": "f7fa9560-b1fe-40cf-9f57-2b5aa8783013"
+  }
 }

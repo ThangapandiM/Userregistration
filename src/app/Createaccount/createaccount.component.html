@@ -1,0 +1,64 @@
+
+<div  fxLayout fxLayout.xs="column" fxLayoutGap="10px"  fxLayoutGap.xs="0">
+    <div class="loginpagecontainer" fxLayout="row" fxFlex="100%" fxLayout.xs="column" fxLayoutAlign="start center" fxFlex.xs="20%"  fxHide.xs fxShow>
+        <div fxLayout="column" fxFlex="40%" class="container "></div>
+        <div class="accountReg" >
+            <div class="login-ctnr">
+              
+             
+              <div class="logo" fxLayoutAlign="center center">
+               
+                <i class="fa fa-cloud logo-img" width="80px" aria-hidden="true" style="font-size:70px; color:var(--color-primary)"></i>
+      
+                <h3 class="heading">Account Registration</h3>
+              </div>
+              
+            
+              <div class="login-content box box-banner">
+                <form name="Customerform" [formGroup]="Customerform">
+                <div class="grid-row">
+                    <div fxLayoutAlign="center center">
+                      <mat-form-field fxFlex="70%">
+                          <mat-select placeholder="Country" formControlName="Countryselect" (selectionChange)="Selectedcountry($event)">
+                            <mat-option value="US">US</mat-option>
+                            <mat-option value="Others">Others</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                    </div>
+                  </div>
+                <div class="grid-row">
+                  <div fxLayoutAlign="center center">
+                    <mat-form-field fxFlex="70%">
+                        <mat-select placeholder="Account Type" formControlName="Accounttype"(selectionChange)="Usertype($event)">
+                          <mat-option value="Client">Client</mat-option>
+                          <mat-option value="Provider">Provider</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </div>
+                </div>
+                <div class="grid-row">
+                  <div fxLayoutAlign="center center">
+                  
+                        <mat-form-field  fxFlex="45%">
+                            <input matInput #input maxlength="10" placeholder="NPI Number" formControlName="NPInumber" required>
+                            <mat-hint style="color: red;">{{NPIvalidation}}</mat-hint>
+                        
+                          </mat-form-field>
+
+                          <button class="checkbntn" type="submit" (click)="validateNPI()" [disabled]="isDisabled">Check</button>
+                  </div>
+                </div>
+                <div class="grid-row">
+                  <div fxLayoutAlign="center center">
+                    <button class="submitbtn" type="submit" (click)="Next()">Next</button>
+                  </div>
+                </div>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+    </div>
+
+       
+       </div>
